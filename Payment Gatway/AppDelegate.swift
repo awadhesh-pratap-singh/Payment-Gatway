@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Payment Gatway
 //
-//  Created by Edoro mac mini 3 on 02/01/24.
+//  Created by Awadhesh Pratap Singh on 02/01/24.
 //
 
 import UIKit
