@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Payment_Gatway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hN-lX-zpg">
+                                <rect key="frame" x="39.333333333333343" y="221" width="314.33333333333326" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAF-F7-hkU">
+                                        <rect key="frame" x="110" y="270" width="94.333333333333314" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Buy Now"/>
+                                        <connections>
+                                            <action selector="buyNowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iza-7Q-rla"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucon-D Tangy Orange Glucose Powder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx8-Kd-SH2">
+                                        <rect key="frame" x="1" y="230" width="312.33333333333331" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CluconD" translatesAutoresizingMaskIntoConstraints="NO" id="3T4-x3-V38">
+                                        <rect key="frame" x="67.333333333333343" y="10" width="180" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="DyE-03-sAM"/>
+                                            <constraint firstAttribute="width" constant="180" id="I6Z-02-vCc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3T4-x3-V38" firstAttribute="top" secondItem="5hN-lX-zpg" secondAttribute="top" constant="10" id="4KQ-Gn-aqH"/>
+                                    <constraint firstAttribute="bottom" secondItem="iAF-F7-hkU" secondAttribute="bottom" constant="5" id="9NJ-ud-4S3"/>
+                                    <constraint firstItem="Jx8-Kd-SH2" firstAttribute="top" secondItem="3T4-x3-V38" secondAttribute="bottom" constant="20" id="Haz-wN-ADT"/>
+                                    <constraint firstItem="Jx8-Kd-SH2" firstAttribute="centerX" secondItem="5hN-lX-zpg" secondAttribute="centerX" id="Q4M-FD-4as"/>
+                                    <constraint firstItem="3T4-x3-V38" firstAttribute="centerX" secondItem="5hN-lX-zpg" secondAttribute="centerX" id="QiM-VT-DBL"/>
+                                    <constraint firstItem="iAF-F7-hkU" firstAttribute="centerX" secondItem="5hN-lX-zpg" secondAttribute="centerX" id="c6n-gf-c0w"/>
+                                    <constraint firstAttribute="height" constant="310" id="cyF-qO-DOV"/>
+                                    <constraint firstItem="iAF-F7-hkU" firstAttribute="width" secondItem="5hN-lX-zpg" secondAttribute="width" multiplier="0.3" id="gqX-YE-w82"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="5hN-lX-zpg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="FSD-mO-Q5U"/>
+                            <constraint firstItem="5hN-lX-zpg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2h-fM-I3x"/>
+                            <constraint firstItem="5hN-lX-zpg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="dOO-Tl-PBu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="5hN-lX-zpg" id="4iM-tU-wOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729.00763358778624" y="-25.35211267605634"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CluconD" width="1500" height="1500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
